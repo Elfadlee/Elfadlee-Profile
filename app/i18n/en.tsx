@@ -32,7 +32,7 @@ hero: {
   },
 
   featuredWork: {
-    title: 'Featured ',
+    title: 'Featured Work',
 
     BoxThreeHeadline: 'Web Development',
     BoxThreeDescription: 'Building modern, scalable websites with a strong focus on performance, accessibility, and clean front-end architecture.',
