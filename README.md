@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Najeh Elfadlee – Personal Portfolio
 
-## Getting Started
+This is my personal portfolio website, built to showcase my work, skills, and experience as a front-end / full-stack developer.
 
-First, run the development server:
+The project is designed with a strong focus on:
 
-```bash
+- Clean, modern UI/UX
+- Performance and scalability
+- Multilingual support (English / Arabic – RTL & LTR)
+- Professional code structure and refactoring best practices
+
+
+- Tech Stack
+
+- Next.js (App Router)
+- React.js
+- TypeScript
+- Material UI (MUI)
+- Framer Motion - (animations)
+- next/font (local fonts)
+
+
+
+-  Features
+
+- Fully responsive design (mobile / tablet / desktop)
+- English & Arabic language support with RTL/LTR handling
+- Custom local fonts (Arabic & English)
+- Animated sections (Hero, About, Featured Work)
+- Contact form with API route
+- Clean component-based architecture
+
+
+
+-  Project Structure (Simplified)
+
+
+app/
+ ├─ components/
+ │   ├─ Navbar.tsx
+ │   ├─ Hero.tsx
+ │   ├─ AboutSection.tsx
+ │   ├─ FeaturedWork.tsx
+ │   ├─ ContactSection.tsx
+ │   └─ Footer.tsx
+ │
+ ├─ fonts/
+ │   ├─ fonts.ts
+ │   ├─ Cairo-VariableFont_slnt,wght.ttf
+ │   ├─ Almarai-*.ttf
+ │   ├─ Oswald-*.ttf
+ │   └─ NotoSerifDisplay-VariableFont_wdth,wght.ttf
+ │
+ ├─ i18n/
+ │   ├─ en.ts
+ │   ├─ ar.ts
+ │   └─ LanguageContext.tsx
+ │
+ ├─ api/
+ │   └─ contact/route.ts
+ │
+ └─ page.tsx
+
+
+
+
+-  Fonts Used
+
+- Cairo  – Arabic UI text
+- Almarai – Arabic headings / strong text
+- Oswald – English secondary typography
+- Noto Serif Display – Name / branding text
+
+All fonts are loaded locally using `next/font/local` for optimal performance.
+
+
+
+- Getting Started
+
+Install dependencies:
+
+bash
+npm install
+
+
+Run the development server:
+
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+- Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The project is ready for deployment on Vercel .
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- bash
+npm run build
+-
+
+
+
+- Notes
+
+- This project is part of an ongoing refactoring and optimization process.
+- Components are intentionally structured for scalability and maintainability.
+- No UI libraries other than MUI are used.
+
+
+
+License
+
+All rights reserved.
+
+This source code is shared for portfolio and demonstration purposes only.
+
+The project is not open source.
+
+Redistribution, modification, or commercial use is not permitted without explicit written permission from the author.
+
+Sensitive configuration, credentials, and private data have been removed.
+
+© 2025 Najeh Elfadlee
