@@ -3,7 +3,7 @@ Najeh Elfadlee – Personal Portfolio
 Live Website:
 https://www.elfadlee.com
 
-This is my personal portfolio website, built to showcase my work, technical skills, and professional experience as a Front-End / Full-Stack Developer.
+This is my personal portfolio website, built to showcase my work, technical skills, and professional experience as a Front-End Developer.
 
 The project is designed with a strong focus on:
 
