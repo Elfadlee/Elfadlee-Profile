@@ -59,10 +59,6 @@ export default function Navbar() {
                 variant="h6"
                 sx={{
                   fontWeight: 400,
-                  // lineHeight: 1.2,
-                  // background: `linear-gradient(120deg,
-                  //   ${theme.palette.primary.main},
-                  //   ${theme.palette.secondary.main})`,
                   background: theme.palette.primary.main,
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
@@ -79,9 +75,6 @@ export default function Navbar() {
                 sx={{
                   fontWeight: 400,
                   mt: 0.2,
-                  // background: `linear-gradient(120deg,
-                  //   ${theme.palette.primary.main},
-                  //   ${theme.palette.secondary.main})`,
                   background: theme.palette.primary.main,
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
@@ -163,11 +156,11 @@ export default function Navbar() {
 
                 '&:hover': {
                   background: 'rgba(99,102,241,0.16)',
-                  transform: 'translateY(-1px)', // 👈 حركة خفيفة جدًا
+                  transform: 'translateY(-1px)', 
                 },
 
                 '&:active': {
-                  transform: 'translateY(0)', // 👈 يرجع طبيعي عند الضغط
+                  transform: 'translateY(0)', 
                 },
               }}
             >

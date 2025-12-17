@@ -28,7 +28,8 @@ export default function ContactSection() {
   const [alertMsg, setAlertMsg] = useState('');
   const [alertType, setAlertType] =
     useState<'success' | 'error'>('success');
-  const { t } = useLang();
+  const { t, lang } = useLang();
+
 
 
 
@@ -66,23 +67,27 @@ export default function ContactSection() {
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
+      // body: JSON.stringify(form),
+      body: JSON.stringify({
+        ...form,
+        lang, 
+      }),
 
     });
 
     if (res.ok) {
-      setAlertMsg(' Message sent successfully');
+      setAlertMsg(t.contact.success);
       setAlertType('success');
       setAlertOpen(true);
       setForm({ name: '', email: '', subject: '', message: '' });
     } else {
-      setAlertMsg('Something went wrong');
+      setAlertMsg(t.contact.error);
       setAlertType('error');
       setAlertOpen(true);
     }
   };
 
-  // BUTTON STYLE (USED IN MOBILE & DESKTOP)
+  // BUTTON 
   const buttonSx = {
     mt: 2,
     px: 6,
@@ -199,7 +204,7 @@ export default function ContactSection() {
           {t.contact.subtitleTwo}
         </Typography>
 
-        {/* GLASS CARD */}
+        {/*  CARD */}
         <Box
           sx={{
             p: { xs: 3.5, md: 1 },
@@ -368,6 +373,8 @@ export default function ContactSection() {
 
       </Container>
 
+
+      {/* MAG ALERT */}
       <MagAlert
         open={alertOpen}
         onClose={() => setAlertOpen(false)}

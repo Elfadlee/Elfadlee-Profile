@@ -55,6 +55,8 @@ hero: {
     subject: 'Subject',
     message: 'Message',
     button: 'Send Message',
+    success: 'Message sent successfully',
+    error: 'Something went wrong , please try again',
   },
 
   Footer: {

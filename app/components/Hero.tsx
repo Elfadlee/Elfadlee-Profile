@@ -130,7 +130,7 @@ export default function Hero() {
             mx: 'auto',
             opacity: 0.9,
             mb: { xs: 4, md: 5 },
-            fontSize: { xs: '0.95rem', md: '1.1rem' },
+            fontSize: { xs: '1.3rem', md: '1.1rem' },
             lineHeight: 1.7,
             fontFamily: (theme) => theme.typography.fontFamily,
           }}

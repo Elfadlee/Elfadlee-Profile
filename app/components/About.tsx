@@ -42,10 +42,10 @@ export default function AboutSection() {
     >
       <Container maxWidth="lg">
 
-        {/* ===== SECTION TITLE ===== */}
+        {/* SECTION TITLE */}
         <Box textAlign="center" mb={10}>
           <Typography
-            variant="h4"
+            variant="h5"
             sx={{
               fontWeight: 600,
               color: 'primary.main',
@@ -75,7 +75,7 @@ export default function AboutSection() {
           />
         </Box>
 
-        {/* ===== CONTENT ROW ===== */}
+        {/* CONTENT ROW  */}
         <Box
               sx={{
                 display: 'flex',
@@ -84,7 +84,7 @@ export default function AboutSection() {
                 py: 1,
               }}
             >
-          {/* ===== IMAGE ===== */}
+          {/* IMAGE  */}
           <Box sx={{ width: { xs: '100%', md: '30%' } }}>
             <Card
               sx={{
@@ -112,7 +112,7 @@ export default function AboutSection() {
             </Card>
           </Box>
 
-          {/* ===== TEXT ===== */}
+          {/*  TEXT  */}
          <Box
               sx={{
                 width: { xs: '100%', md: '60%' },
@@ -122,7 +122,7 @@ export default function AboutSection() {
             >
 
             <Typography
-              variant="h4"
+              variant="h5"
               sx={{
                 ...baseText,
                 fontWeight: 400,
@@ -175,7 +175,7 @@ export default function AboutSection() {
               {t.about.p2}
             </Typography>
 
-            {/* ===== SKILLS ===== */}
+            {/* SKILLS */}
             <Box
               sx={{
                 display: 'flex',

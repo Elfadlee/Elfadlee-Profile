@@ -9,7 +9,6 @@ import {
   CardContent,
 } from '@mui/material';
 
-import Grid from '@mui/material/Grid';
 import { motion } from 'framer-motion';
 import { useLang } from '@/app/i18n/LanguageContext';
 
@@ -19,54 +18,55 @@ const MotionCard = motion(Card);
 
 export default function FeaturedWork() {
 
-    const { t } = useLang();
+  const { t } = useLang();
 
 
-const projects = [
+  const projects = [
 
     {
-    title: t.featuredWork.BoxThreeHeadline,
-    desc: t.featuredWork.BoxThreeDescription,
-    tags: ['React.js', 'Next.js', 'TypeScript', 'Material UI', 'Firebase', 'Node.js'],
-    accent: false,
-  },
- 
-  {
-    title: t.featuredWork.BoxTwoHeadline,
-    desc: t.featuredWork.BoxTwoDescription,
-    tags: ['React Native', 'Expo', 'React Native Paper', 'API Integration'],
-    accent: true,
-  },
+      title: t.featuredWork.BoxThreeHeadline,
+      desc: t.featuredWork.BoxThreeDescription,
+      tags: ['React.js', 'Next.js', 'TypeScript', 'Material UI', 'Firebase', 'Node.js'],
+      accent: false,
+    },
 
-   {
-    title: t.featuredWork.BoxOneHeadline,
-    desc: t.featuredWork.BoxOneDescription,
-    tags: ['Localization', 'Translation', 'Cultural Adaptation', 'i18n'],
-    accent: false,
-  },
+    {
+      title: t.featuredWork.BoxTwoHeadline,
+      desc: t.featuredWork.BoxTwoDescription,
+      tags: ['React Native', 'Expo', 'React Native Paper', 'API Integration'],
+      accent: true,
+    },
 
-];
+    {
+      title: t.featuredWork.BoxOneHeadline,
+      desc: t.featuredWork.BoxOneDescription,
+      tags: ['Localization', 'Translation', 'Cultural Adaptation', 'i18n'],
+      accent: false,
+    },
+
+  ];
 
 
   return (
-    <Box sx={{ py: { xs: 10, md: 10 }  }}>
+    <Box sx={{ py: { xs: 10, md: 10 } }}>
       <Container maxWidth="lg" >
 
-        {/* ===== TITLE ===== */}
+        {/*  TITLE */}
         <Box textAlign="center" mb={8}>
           <Typography
-            variant="h4"
-            
-            sx={{ fontWeight: 600, color: 'primary.main',
-           
-              fontFamily: (theme) => theme.typography.fontFamily,
-              
+            variant="h5"
 
-             }}
-             
+            sx={{
+              fontWeight: 600, color: 'primary.main',
+
+              fontFamily: (theme) => theme.typography.fontFamily,
+
+
+            }}
+
           >
             {/* Featured Work */}
-            {t.featuredWork.title }
+            {t.featuredWork.title}
           </Typography>
 
           <Box
@@ -81,7 +81,7 @@ const projects = [
           />
         </Box>
 
-        {/* ===== CARDS ===== */}
+        {/* CARDS */}
         <Box
           sx={{
             display: 'flex',
@@ -93,12 +93,12 @@ const projects = [
         >
           {projects.map((item, i) => (
             <Box
-                    key={i}
-                    sx={{
-                      flex: 1,
-                      display: 'flex',
-                    }}
-                  >
+              key={i}
+              sx={{
+                flex: 1,
+                display: 'flex',
+              }}
+            >
 
               <MotionCard
                 // desktop hover
@@ -114,29 +114,29 @@ const projects = [
                     ? '0 25px 80px rgba(120,100,255,0.35)'
                     : '0 20px 60px rgba(0,0,0,0.12)',
                   transform: item.accent ? 'scale(1.05)' : 'scale(1)',
-                   display: 'flex',
-                    flexDirection: 'column',
-                    height: '100%', 
+                  display: 'flex',
+                  flexDirection: 'column',
+                  height: '100%',
                 }}
               >
                 {/* IMAGE */}
                 <Box
                   sx={{
                     height: 40,
-              
-                      }}
+
+                  }}
                 />
 
                 {/* CONTENT */}
                 <CardContent
-                          sx={{
-                            px: 3,
-                            py: 2,
-                            display: 'flex',
-                            flexDirection: 'column',
-                            flexGrow: 1,
-                          }}
-                        >
+                  sx={{
+                    px: 3,
+                    py: 2,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    flexGrow: 1,
+                  }}
+                >
 
                   <Typography variant="h6" fontWeight={700} mb={2}>
                     {item.title}
@@ -152,29 +152,29 @@ const projects = [
                   </Typography>
 
                   <Box
-                          sx={{
-                            display: 'grid',
-                            gridTemplateColumns: {
-                              xs: 'repeat(2, 1fr)',  
-                              sm: 'auto',           
-                            },
-                            gap: 1.5,
-                          }}
-                        >
+                    sx={{
+                      display: 'grid',
+                      gridTemplateColumns: {
+                        xs: 'repeat(2, 1fr)',
+                        sm: 'auto',
+                      },
+                      gap: 1.5,
+                    }}
+                  >
 
                     {item.tags.map((tag) => (
-                     <Chip
-                          key={tag}
-                          label={tag}
-                          variant="outlined"
-                          size="medium"
-                          sx={{
-                            minWidth: 120,             
-                            justifyContent: 'center',
-                            fontWeight: 500,
-                            borderRadius: '999px',
-                          }}
-                          />
+                      <Chip
+                        key={tag}
+                        label={tag}
+                        variant="outlined"
+                        size="medium"
+                        sx={{
+                          minWidth: 120,
+                          justifyContent: 'center',
+                          fontWeight: 500,
+                          borderRadius: '999px',
+                        }}
+                      />
 
                     ))}
                   </Box>
